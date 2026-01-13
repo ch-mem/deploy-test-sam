@@ -1,0 +1,2 @@
+# Lambda function dependencies
+# 追加のパッケージが必要な場合はここに記載してください
