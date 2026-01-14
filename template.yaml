@@ -15,6 +15,7 @@ Resources:
       CodeUri: hello_world/
       Handler: app.lambda_handler
       Runtime: python3.11
+      Role: !Sub 'arn:aws:iam::${AWS::AccountId}:role/execute-lambda-role-for-sam-deploy-test'
       Architectures:
         - x86_64
       Events:
