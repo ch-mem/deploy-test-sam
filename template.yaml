@@ -18,6 +18,12 @@ Resources:
       Role: !Sub 'arn:aws:iam::${AWS::AccountId}:role/execute-lambda-role-for-sam-deploy-test'
       Architectures:
         - x86_64
+      VpcConfig:
+        SubnetIds:
+          - subnet-00ef3505b6d3c5a2a
+          - subnet-0dadff8539ec991ef
+        SecurityGroupIds:
+          - sg-066d406805de8fbb2
       Events:
         HelloWorld:
           Type: Api
